@@ -12,6 +12,10 @@
 		441781C4213FC501005FC07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441781C2213FC501005FC07F /* Main.storyboard */; };
 		441781C6213FC501005FC07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441781C5213FC501005FC07F /* Assets.xcassets */; };
 		441781C9213FC501005FC07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441781C7213FC501005FC07F /* LaunchScreen.storyboard */; };
+		441781D3213FC565005FC07F /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441781D0213FC565005FC07F /* PopOverView.swift */; };
+		441781D4213FC566005FC07F /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441781D1213FC565005FC07F /* BrowserView.swift */; };
+		441781D5213FC566005FC07F /* BrowserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 441781D2213FC565005FC07F /* BrowserView.xib */; };
+		441781D7213FE9F1005FC07F /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441781D6213FE9F1005FC07F /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		441781C5213FC501005FC07F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441781C8213FC501005FC07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		441781CA213FC501005FC07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441781D0213FC565005FC07F /* PopOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
+		441781D1213FC565005FC07F /* BrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		441781D2213FC565005FC07F /* BrowserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserView.xib; sourceTree = "<group>"; };
+		441781D6213FE9F1005FC07F /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,10 @@
 		441781B2213FC501005FC07F = {
 			isa = PBXGroup;
 			children = (
+				441781D6213FE9F1005FC07F /* LoaderView.swift */,
+				441781D1213FC565005FC07F /* BrowserView.swift */,
+				441781D2213FC565005FC07F /* BrowserView.xib */,
+				441781D0213FC565005FC07F /* PopOverView.swift */,
 				441781BD213FC501005FC07F /* RSCustomBrowser */,
 				441781BC213FC501005FC07F /* Products */,
 			);
@@ -126,6 +138,7 @@
 				441781C9213FC501005FC07F /* LaunchScreen.storyboard in Resources */,
 				441781C6213FC501005FC07F /* Assets.xcassets in Resources */,
 				441781C4213FC501005FC07F /* Main.storyboard in Resources */,
+				441781D5213FC566005FC07F /* BrowserView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441781D7213FE9F1005FC07F /* LoaderView.swift in Sources */,
 				441781C1213FC501005FC07F /* ViewController.swift in Sources */,
 				441781BF213FC501005FC07F /* AppDelegate.swift in Sources */,
+				441781D3213FC565005FC07F /* PopOverView.swift in Sources */,
+				441781D4213FC566005FC07F /* BrowserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

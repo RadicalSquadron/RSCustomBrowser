@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3XS-6E-Lyj" customClass="BrowserView" customModule="RSCustomBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwR-xy-XPQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMm-BK-mLn">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="backIcon"/>
+                            <connections>
+                                <action selector="quitWebView:" destination="3XS-6E-Lyj" eventType="touchUpInside" id="EVF-bg-Iek"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJs-qL-QU2">
+                            <rect key="frame" x="354" y="0.0" width="60" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="V9J-1Y-Smx"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="menuIcon"/>
+                            <connections>
+                                <action selector="revealMenuIcon:" destination="3XS-6E-Lyj" eventType="touchUpInside" id="DTR-o8-n0e"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLK-DA-Kj6">
+                            <rect key="frame" x="62" y="30" width="290" height="30"/>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" notEnabled="YES"/>
+                                <bool key="isElement" value="NO"/>
+                            </accessibility>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bMm-BK-mLn" secondAttribute="bottom" constant="5" id="3Rd-lr-0qq"/>
+                        <constraint firstItem="bMm-BK-mLn" firstAttribute="leading" secondItem="lwR-xy-XPQ" secondAttribute="leading" id="7gM-OV-tlZ"/>
+                        <constraint firstItem="AJs-qL-QU2" firstAttribute="leading" secondItem="fLK-DA-Kj6" secondAttribute="trailing" constant="2" id="DWM-RD-Ech"/>
+                        <constraint firstAttribute="bottom" secondItem="AJs-qL-QU2" secondAttribute="bottom" constant="5" id="ETO-u5-Ka1"/>
+                        <constraint firstAttribute="height" constant="75" id="RIV-el-xw6"/>
+                        <constraint firstItem="AJs-qL-QU2" firstAttribute="width" secondItem="bMm-BK-mLn" secondAttribute="width" id="VZZ-II-EbS"/>
+                        <constraint firstItem="fLK-DA-Kj6" firstAttribute="leading" secondItem="bMm-BK-mLn" secondAttribute="trailing" constant="2" id="bTb-0s-DCh"/>
+                        <constraint firstItem="AJs-qL-QU2" firstAttribute="top" secondItem="lwR-xy-XPQ" secondAttribute="top" id="dWB-VZ-gNC"/>
+                        <constraint firstItem="bMm-BK-mLn" firstAttribute="top" secondItem="lwR-xy-XPQ" secondAttribute="top" id="lu6-PX-JVf"/>
+                        <constraint firstAttribute="trailing" secondItem="AJs-qL-QU2" secondAttribute="trailing" id="s7N-Jx-BDS"/>
+                        <constraint firstItem="fLK-DA-Kj6" firstAttribute="top" secondItem="lwR-xy-XPQ" secondAttribute="top" constant="30" id="sYI-Id-Y0a"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvg-S3-Zoq">
+                    <rect key="frame" x="0.0" y="75" width="414" height="525"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bvg-S3-Zoq" firstAttribute="top" secondItem="lwR-xy-XPQ" secondAttribute="bottom" id="6lm-B6-QGG"/>
+                <constraint firstAttribute="trailing" secondItem="lwR-xy-XPQ" secondAttribute="trailing" id="C6F-Da-dQ5"/>
+                <constraint firstAttribute="bottom" secondItem="bvg-S3-Zoq" secondAttribute="bottom" id="ENl-hu-rlT"/>
+                <constraint firstItem="bvg-S3-Zoq" firstAttribute="leading" secondItem="3XS-6E-Lyj" secondAttribute="leading" id="PSB-ee-6qg"/>
+                <constraint firstAttribute="trailing" secondItem="bvg-S3-Zoq" secondAttribute="trailing" id="cGw-nP-a3T"/>
+                <constraint firstItem="lwR-xy-XPQ" firstAttribute="leading" secondItem="3XS-6E-Lyj" secondAttribute="leading" id="meq-bF-wNt"/>
+                <constraint firstItem="lwR-xy-XPQ" firstAttribute="top" secondItem="3XS-6E-Lyj" secondAttribute="top" id="uCc-DH-Eiu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="customWebView" destination="bvg-S3-Zoq" id="iRc-fu-SEw"/>
+                <outlet property="revealMenuIcon" destination="AJs-qL-QU2" id="GhQ-qM-I6m"/>
+                <outlet property="urlField" destination="fLK-DA-Kj6" id="b3g-MZ-3o8"/>
+            </connections>
+            <point key="canvasLocation" x="-118" y="14"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backIcon" width="13" height="20"/>
+        <image name="menuIcon" width="7" height="18"/>
+    </resources>
+</document>
